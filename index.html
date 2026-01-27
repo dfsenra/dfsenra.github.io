@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Douglas Senra | Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <h1>Douglas Senra</h1>
+  <p class="headline" data-pt>
+    Engenheiro de Processos em transição para Data Science, com background em estatística,
+    problem solving, gestão de projetos e R&D na indústria médica.
+  </p>
+  <p class="headline hidden" data-en>
+    Process Engineer transitioning to Data Science, with a background in statistics,
+    problem solving, project management and R&D in the medical devices industry.
+  </p>
+
+  <button onclick="toggleLanguage()">PT / EN</button>
+</header>
+
+<section>
+  <h2 data-pt>Sobre mim</h2>
+  <h2 class="hidden" data-en>About me</h2>
+
+  <p data-pt>
+    Sou engenheiro de processos com mais de 10 anos de experiência na indústria, com forte base
+    em resolução de problemas, estatística, análise de dados e melhoria contínua.
+    <br/><br/>
+    Como parte de R&D, sempre utilizei dados para tomada de decisão, o que me motivou a direcionar
+    minha transição para Data Science.
+    <br/><br/>
+    Atualmente, estou focado em desenvolver projetos práticos que resolvam problemas reais,
+    envolvendo coleta, tratamento, análise, modelagem de dados e visualização dos resultados.
+  </p>
+
+  <p class="hidden" data-en>
+    I am a Process Engineer with over 10 years of experience in industry, with a strong foundation
+    in problem solving, statistics, data analysis and continuous improvement.
+    <br/><br/>
+    As part of R&D teams, I have always relied on data-driven decision making, which motivated my
+    transition into Data Science.
+    <br/><br/>
+    Currently, I focus on developing practical projects that solve real-world problems, involving
+    data collection, processing, analysis, modeling and visualization.
+  </p>
+</section>
+
+<section>
+  <h2 data-pt>Projetos</h2>
+  <h2 class="hidden" data-en>Projects</h2>
+
+  <div class="project">
+    <h3>Pipeline de Coleta de Dados Financeiros (YFinance)</h3>
+
+    <p data-pt>
+      Desenvolvimento de um pipeline de dados em Python para coleta automatizada de preços históricos
+      de ativos financeiros.
+      <br/><br/>
+      A solução implementa um ETL robusto com controle de rate limit para evitar bloqueios de IP,
+      filtros estatísticos para diferenciar cotações de proventos, além de logs auditáveis,
+      alertas por e-mail e execução automatizada.
+      <br/><br/>
+      O projeto prioriza reprodutibilidade, clareza de código e criação de uma base sólida para
+      análises e modelos futuros.
+    </p>
+
+    <p class="hidden" data-en>
+      Development of a Python-based data pipeline for automated collection of historical financial
+      asset prices.
+      <br/><br/>
+      The solution implements a robust ETL with rate-limit control to avoid IP blocking, statistical
+      filters to distinguish prices from dividends, as well as auditable logs, email alerts and
+      automated execution.
+      <br/><br/>
+      The project prioritizes reproducibility, code clarity and the creation of a solid foundation
+      for future analyses and models.
+    </p>
+
+    <p><strong>Stack:</strong> Python, Pandas, YFinance</p>
+
+    <a href="https://github.com/dfsenra" target="_blank">Ver no GitHub</a>
+  </div>
+</section>
+
+<section>
+  <h2 data-pt>Contato</h2>
+  <h2 class="hidden" data-en>Contact</h2>
+
+  <ul>
+    <li><a href="https://github.com/dfsenra" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/dfsenra/" target="_blank">LinkedIn</a></li>
+    <li><a href="mailto:dfsenra@gmail.com">dfsenra@gmail.com</a></li>
+  </ul>
+</section>
+
+<script>
+function toggleLanguage() {
+  document.querySelectorAll('[data-pt]').forEach(e => e.classList.toggle('hidden'));
+  document.querySelectorAll('[data-en]').forEach(e => e.classList.toggle('hidden'));
+}
+</script>
+
+</body>
+</html>
